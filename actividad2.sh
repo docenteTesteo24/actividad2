@@ -8,11 +8,11 @@ echo "LISTADO DE TABLA DESARROLLO----"
 psql -d db_desarrollo -U postgres  -c "\dt+ tbl_desarrollo"
 
 echo "LISTADO DE ESQUEMAS DESARROLLO----"
-psql -d db_producción -U postgres  -c "\dn"
+psql -d db_produccion -U postgres  -c "\dn"
 echo "LISTADO DE ESQUEMAS TABLA----"
-psql -d db_producción -U postgres -c "\dt+ tbl_desarrollo"
+psql -d db_produccion -U postgres -c "\dt+ tbl_desarrollo"
 echo "LISTADO DE ESQUEMAS TABLA----"
-psql -d db_producción -U postgres -c "\dt+ historico.tbl_desarrollo"
+psql -d db_produccion -U postgres -c "\dt+ historico.tbl_desarrollo"
 
 echo "EJERCICIO 3"
 echo"------------------------------"
@@ -22,5 +22,5 @@ cat /etc/postgresql/15/main/pg_hba.conf |grep encargadodb
 echo "EJERCICIO 4"
 echo "------------------------------"
 psql -d db_desarrollo -U udesarrollo -h 127.0.0.1 -c "\dt"
-psql -d encargadodb -U db_producción -h 127.0.0.1 -c "\dt"
+psql -d encargadodb -U db_produccion -h 127.0.0.1 -c "\dt"
 
